@@ -20,7 +20,7 @@ public class MemberDAO implements MemberDAOIF {
 	@Inject
 	private SqlSession sqlSession;
 	
-	private static String Namespace = "com.tokyobridge.tiger.mapper.memberMapper";
+	private static String Namespace = "com.tokyobridge.tora.mapper.memberMapper";
 	
 	/**
 	 * 
