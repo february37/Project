@@ -16,6 +16,6 @@
 			</td>
 		</tr>
 	</table>
-	<type="submit" action="insertProduct" method="post"></form>
+	<type="submit" action="insertProduct" method="post">
 </body>
 </html>
