@@ -41,7 +41,6 @@ public class productDAOTest {
 		vo.setProductIndex("0");
 		vo.setProductName("TEST");
 		List<ProductEntity> list = dao.selectProductTargetName(vo);
-		System.out.println();
 	}
 
 }
