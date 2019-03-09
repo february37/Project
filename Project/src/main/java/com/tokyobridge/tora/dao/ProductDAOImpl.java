@@ -25,7 +25,7 @@ public class ProductDAOImpl implements ProductDAOIF {
 
 	@Override
 	public List<ProductEntity> selectProductTargetName(ProductVO vo) throws Exception {
-		return sqlSession.selectOne(Namespace+"select.ProductTargetName", vo);
+		return sqlSession.selectList(Namespace+".selectProductTargetName", vo);
 	}
 
 }
