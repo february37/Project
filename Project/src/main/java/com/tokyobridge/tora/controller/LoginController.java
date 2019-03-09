@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.tokyobridge.tora.entity.ProductEntity;
 import com.tokyobridge.tora.service.LoginService;
 import com.tokyobridge.tora.vo.MemberVO;
 
@@ -42,7 +43,6 @@ public class LoginController {
 		
 		vo = service.selectMember(vo);
 		session.setAttribute("MemberVO", vo != null ? vo.toString() : "値なし");
-		
 		return "/main/main";
 	}
 

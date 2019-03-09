@@ -11,8 +11,8 @@
 		<!--  2018.12.02 김 정헌 -->
 		<typeAliases>
 			<typeAlias type="com.tokyobridge.tora.vo.MemberVO" alias="MemberVO"/>
-			<typeAlias type="com.tokyobridge.tora.vo.ProductVO" alias="ProductVO"/>
 			<typeAlias type="com.tokyobridge.tora.entity.MemberEntity" alias="MemberEntity"/>
+			<typeAlias type="com.tokyobridge.tora.vo.ProductVO" alias="ProductVO"/>
 			<typeAlias type="com.tokyobridge.tora.entity.ProductEntity" alias="ProductEntity"/>
 		</typeAliases>
     </configuration>
