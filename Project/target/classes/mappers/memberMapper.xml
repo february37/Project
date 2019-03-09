@@ -5,7 +5,6 @@
     <select id="selectMember" parameterType="MemberVO" resultType="MemberVO">
         SELECT 
         	INDEX_NO as index_no,
-			DEL_SIGN as del_sign,
 			ZIP as zip,
 			ADDRESS as address,
 			TEL1 as tel1,
@@ -32,5 +31,6 @@
         FROM member_tbl
         WHERE USER_ID = #{user_id}
         AND USER_PW = #{user_pw}
+        AND DEL_SIGN = 0
     </select>
 </mapper>
