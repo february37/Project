@@ -13,7 +13,7 @@
 		<result column="product_menual" property="productMenual"/>
 	</resultMap>
 
-    <select id="selectProductTargetIndex" parameterType="ProductVO" resultType="ProductEntity">
+    <select id="selecttProductTargetIndex" parameterType="ProductVO" resultType="ProductEntity">
     	SELECT
     		 * 
     	FROM
@@ -21,7 +21,7 @@
     	WHERE PRODUCT_INDEX = #{productIndex}
     	AND DELETE_FLAG = 0
     </select>
-    <select id="selectProductTargetName" parameterType="ProductVO" resultType="ProductEntity">
+    <select id="selecttProductTargetName" parameterType="ProductVO" resultType="ProductEntity">
     	SELECT
     		 * 
     	FROM
