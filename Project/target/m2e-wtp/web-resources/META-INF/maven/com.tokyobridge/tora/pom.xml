@@ -33,6 +33,13 @@
 		    <artifactId>spring-webmvc</artifactId>
 		    <version>5.1.5.RELEASE</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-orm</artifactId>
+		    <version>5.1.5.RELEASE</version>
+		</dependency>
+				
 		<!-- Start 2018/12/01 김정헌-->
 		<!-- MySQL라이브러리 -->
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->

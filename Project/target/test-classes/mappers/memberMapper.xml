@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.tokyobridge.tora.mapper.memberMapper">
+    <select id="selectMember" parameterType="MemberVO" resultType="MemberVO">
+        SELECT 
+        	INDEX_NO as index_no,
+			ZIP as zip,
+			ADDRESS as address,
+			TEL1 as tel1,
+			TEL2 as tel2,
+			FAX as fax,
+			EMAIL1 as email1,
+			EMAIL2 as email2,
+			USER_ID as user_id,
+			USER_NM as user_nm,
+			USER_NM_KANJI as user_nm_kanji,
+			USER_NM_KANA as user_nm_kana,
+			USER_PW as user_pw,
+			RESPONSIBILITY as responsibility,
+			COMPANY as company,
+			COMPANY_POSITION as company_position,
+			REGISTANT as registant,
+			REGISTRATION_DATE as registration_date,
+			MODIFIED_DATE as modified_date,
+			SPARE_FIG1 as spare_fig1,
+			SPARE_FIG2 as spare_fig2,
+			SPARE_FIG3 as spare_fig3,
+			SPARE_FIG4 as spare_fig4,
+			SPARE_FIG5 as spare_fig5
+        FROM member_tbl
+        WHERE USER_ID = #{user_id}
+        AND USER_PW = #{user_pw}
+        AND DEL_SIGN = 0
+    </select>
+</mapper>

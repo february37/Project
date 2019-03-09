@@ -1,4 +1,4 @@
-package com.tokyobridge.tora;
+package com.tokyobridge.tora.enviroment;
 
 import javax.inject.Inject;
  
