@@ -17,7 +17,12 @@ public class ProductDAOImpl implements ProductDAOIF {
 	private SqlSession sqlSession;
 	
 	private static String Namespace = "com.tokyobridge.tora.mapper.productMapper";
-	
+
+	@Override
+	public List<ProductEntity> selectProductTargetAll() throws Exception {
+		return sqlSession.selectList(Namespace+".selectProductTargetAll");
+	}
+
 	@Override
 	public ProductEntity selectProductTargetIndex(ProductVO vo) throws Exception {
 		return sqlSession.selectOne(Namespace+".selectProductTargetIndex", vo);
@@ -27,5 +32,17 @@ public class ProductDAOImpl implements ProductDAOIF {
 	public List<ProductEntity> selectProductTargetName(ProductVO vo) throws Exception {
 		return sqlSession.selectList(Namespace+".selectProductTargetName", vo);
 	}
+ 
+	@Override
+	public void insertProduct(ProductVO vo) throws Exception {
+		sqlSession.insert(Namespace+".insertProduct", vo);
+	}
+
+	@Override
+	public int deleteProductTargetIndex(ProductVO vo) throws Exception {
+		return sqlSession.update(Namespace+".deleteProductTargetIndex", vo);
+	}
+	
+
 
 }

@@ -1,16 +1,11 @@
 package com.tokyobridge.tora.dao;
 
-import static org.junit.Assert.assertEquals;
-
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
 
-import org.apache.log4j.Logger;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.slf4j.LoggerFactory;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -42,5 +37,18 @@ public class productDAOTest {
 		vo.setProductName("TEST");
 		List<ProductEntity> list = dao.selectProductTargetName(vo);
 	}
+	
+	
+	@Test
+	public void testInsertProduct() throws Exception {
+		ProductVO vo = new ProductVO();
+		vo.setProductName("TEST");
+		vo.setPrice("10000");
+		vo.setDiscount("0");
+		vo.setProductMenual("HELLO WOLRD!");
+		dao.insertProduct(vo);
+	}
+	
+	
 
 }

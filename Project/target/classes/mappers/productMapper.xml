@@ -12,7 +12,13 @@
 		<result column="discount" property="discount"/>
 		<result column="product_menual" property="productMenual"/>
 	</resultMap>
-
+    <select id="selectProductTargetAll" resultType="ProductEntity">
+    	SELECT
+    		 * 
+    	FROM
+    		 PRODUCT_TBL 
+    	AND DELETE_FLAG = 0
+    </select>
     <select id="selectProductTargetIndex" parameterType="ProductVO" resultType="ProductEntity">
     	SELECT
     		 * 
@@ -29,5 +35,28 @@
     	WHERE PRODUCT_NAME = #{productName}
     	AND DELETE_FLAG = 0
     </select>
+    <insert id="insertProduct" parameterType="ProductVO">
+    	INSERT INTO 
+    		PRODUCT_TBL (
+    			PRODUCT_NAME, 
+    			PRICE, 
+    			DISCOUNT, 
+    			PRODUCT_MENUAL
+    			) 
+    		VALUE(
+    			#{productName},
+    			#{price},
+    			#{discount},
+    			#{productMenual}
+    		)
+    </insert>
+    <update id="deleteProductTargetIndex" parameterType="ProductVO">
+    	UPDATE 
+    		PRODUCT_TBL 
+    	SET
+    		DELETE_FLAG = '1'
+    	WHERE 
+    		PRODUCT_INDEX = #{productIndex}
+    </update>
     
 </mapper>
