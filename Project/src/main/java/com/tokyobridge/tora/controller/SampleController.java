@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.tokyobridge.tora.entity.MemberEntity;
+import com.tokyobridge.tora.utils.MailUtils;
 
 import ch.qos.logback.classic.Logger;
 /**
@@ -66,6 +67,8 @@ public class SampleController {
 	public @ResponseBody MemberEntity helloJSON() {
 		MemberEntity entity = new MemberEntity();
 		entity.setUser_id("JSON");
+		MailUtils mail = new MailUtils();
+		mail.sendEmail();
 		return entity;
 	}
 	

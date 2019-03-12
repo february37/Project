@@ -33,4 +33,5 @@
 	<!-- bean 등록 -->
 	<context:component-scan base-package="com.tokyobridge.tora.dao"></context:component-scan>
 	<context:component-scan base-package="com.tokyobridge.tora.service"></context:component-scan>
+	<context:component-scan base-package="com.tokyobridge.tora.utils"></context:component-scan>
 </beans>
