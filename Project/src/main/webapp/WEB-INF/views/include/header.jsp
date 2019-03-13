@@ -14,10 +14,10 @@
     <!-- Ionicons -->
     <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
     <!-- Theme style -->
-    <link href="/resources/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <link href="/resources/dist/css/AdminLTE.css" rel="stylesheet" type="text/css" />
     <!-- AdminLTE Skins. Choose a skin from the css/skins 
          folder instead of downloading all of them to reduce the load. -->
-    <link href="/resources/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+    <link href="/resources/dist/css/skins/_all-skins.css" rel="stylesheet" type="text/css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -314,13 +314,13 @@
           <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
             <li class="treeview">
-              <a href="#">
+              <a href="yellow">
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
-              <ul class="treeview-menu">
+              <!-- <ul class="treeview-menu">
                 <li><a href="/resources/index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
                 <li><a href="/resources/index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
-              </ul>
+              </ul> -->
             </li>
             <li class="treeview">
               <a href="#">
@@ -369,15 +369,15 @@
               </ul>
             </li>
             <li class="treeview active">
-              <a href="#">
-                <i class="fa fa-edit"></i> <span>Forms</span>
+              <a href="goProduct">
+                <i class="fa fa-edit"></i> <span>商品登録</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
-              <ul class="treeview-menu">
+              <!-- <ul class="treeview-menu">
                 <li class="active"><a href="general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
                 <li><a href="advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
                 <li><a href="editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
-              </ul>
+              </ul> -->
             </li>
             <li class="treeview">
               <a href="#">
